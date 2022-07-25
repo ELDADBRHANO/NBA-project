@@ -1,4 +1,4 @@
-const divB = document.getElementById("myDiv_B")
+const players_Div = document.getElementById("playersDiv")
 const optionsB = {
 	method: 'GET',
 	headers: {
@@ -10,11 +10,13 @@ const optionsB = {
 fetch('https://free-nba.p.rapidapi.com/players?page=0&per_page=25', optionsB)
 	.then(response => response.json())
 	.then(response => response.data.forEach(element => {
-    divB.innerHTML+=`<div class="col-4">
-    <p>First Name:${element['first_name']}</p>
-    <p>Id:${element['id']}</p>
-    <p>Last Name:${element['last_name']}</p>
-    <p>Position:${element['position']}
+    players_Div.innerHTML+=`<div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h1>${element['first_name']}</h1>
+    <h3>${element['last_name']}</h3>
+    <p>Number: ${element['id']}</p>
+    <p>Position: ${element['position']}
+    </div>
     </div>
     `
   }))
@@ -22,3 +24,5 @@ fetch('https://free-nba.p.rapidapi.com/players?page=0&per_page=25', optionsB)
 
 
 
+
+  

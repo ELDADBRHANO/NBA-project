@@ -1,12 +1,5 @@
 const arrayImges = [
-  "/imges/for-news/kneeling.jpg",
-  "/imges/for-news/legoat.jpg",
-  "/imges/for-news/trophy.jpg",
-  "/imges/for-news/76ers-new-arena-rendering.jpg",
-  "/imges/for-news/CARMELO.jpg",
-  "/imges/for-news/harden.jpg",
-  "/imges/for-news/harden-irving-run-iso.jpg" ,
-  "/imges/for-news/damian-lillard-ftr_.jpeg",
+
   "/imges/for-news/DRAY.png",
   "/imges/for-news/DREW.png",
   "/imges/for-news/gobert-murray-split2.jpg",
@@ -19,7 +12,6 @@ const arrayImges = [
   "/imges/for-news/ayton.jpg",
   "/imges/for-news/blackwhite.jpg",
   "/imges/for-news/booker-williams-paul-game-5.jpg",
-  "/imges/for-news/kneeling.jpg",
   "/imges/for-news/Chetmurray.jpg",
   "/imges/for-news/iluv.jpg",
   "/imges/for-news/jump.jpg",
@@ -101,7 +93,9 @@ printNews();
 
 
 
-
+function dropdown(trigger){
+  trigger.nextElementSibling.classList.toggle('hidden');
+}
 
 
 
