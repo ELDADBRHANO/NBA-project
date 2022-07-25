@@ -1,9 +1,9 @@
 const arrayImges = [
 
+  "/imges/for-news/Irving-Westbrook-FTR.jpeg",
   "/imges/for-news/DRAY.png",
   "/imges/for-news/DREW.png",
   "/imges/for-news/gobert-murray-split2.jpg",
-  "/imges/for-news/Irving-Westbrook-FTR.jpeg",
   "/imges/for-news/KOBE.jpg",
   "/imges/for-news/Melo-Sexton-Schroder-FTR.jpeg",
   "/imges/for-news/SIXERS.jpg",
@@ -73,13 +73,13 @@ function printNews() {
   getNews().then((response) =>
     response.forEach((element) => {
       espn_Div.innerHTML += `
-    <div class="card" style="width: 18rem;" >
+    <div style="margin-top:5vh;" class="card">
     <img class="img-fluid" src="${
       arrayImges[counter++]
     }" class="card-img-top">
-    <div class="card-body">
-  <h1">${element["source"]}</h1>
-  <h3>${element["title"]}</h3>
+    <div class="card-body text-center">
+  <h1 class="display-1"">${element["source"]}</h1>
+  <h2>${element["title"]}</h2>
   <a target="_blank" href="${
     element["url"]
   }" class="btn btn-primary">Click here fore more Details</a>
@@ -90,13 +90,6 @@ function printNews() {
   );
 }
 printNews();
-
-
-
-function dropdown(trigger){
-  trigger.nextElementSibling.classList.toggle('hidden');
-}
-
 
 
 
