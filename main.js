@@ -124,17 +124,6 @@ printNews();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // let news_Articles = document.getElementById("newsArticles");
 // const optionsE = {
 //   method: "GET",
