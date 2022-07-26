@@ -1,0 +1,24 @@
+.player{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.field_stats{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 15vw;
+}
+.feild_api{
+  border-right: 2px solid black;
+}
+
+#player_stats_12{
+  display: none;
+}
+
+#logo{
+  height: 8vh;
+}

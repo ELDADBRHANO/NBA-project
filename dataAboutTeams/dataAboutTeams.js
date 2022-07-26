@@ -65,23 +65,3 @@ fetch("https://free-nba.p.rapidapi.com/teams", optionsA)
   })
   .catch((err) => console.log(err));
   
-  // const optionsC = {
-  // 	method: 'GET',
-  // 	headers: {
-  // 		'X-RapidAPI-Key': '565bce9913msh2597330abe48d39p1a3501jsnb7eca1f35e2d',
-  // 		'X-RapidAPI-Host': 'free-nba.p.rapidapi.com'
-  // 	}
-  // };
-  
-  // fetch('https://free-nba.p.rapidapi.com/games?page=0&per_page=25', optionsC)
-  // 	.then(response => response.json())
-  // 	.then(response => response.data.forEach(element => {
-  //     div_games.innerHTML+=`
-  //     <div>
-  //     <p>Date: ${element['date']}<p>
-  //     <p>Home Team: ${element.home_team['city']}</p>
-  //     <p>Team name: ${element.home_team['full_name']}</p>
-  //     <p>Home team score: ${element['home_team_score']}<p>
-  //     `
-  //   }))
-  // 	.catch(err => console.error(err));

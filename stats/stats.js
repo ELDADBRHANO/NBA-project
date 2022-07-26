@@ -1,4 +1,5 @@
-const divStats=document.getElementById("myD")
+let id_dynamic=0
+const divStats=document.getElementById("tbody")
 const optionsD = {
 	method: 'GET',
 	headers: {
@@ -7,23 +8,139 @@ const optionsD = {
 	}
 };
 
-fetch('https://free-nba.p.rapidapi.com/stats?page=0&per_page=25', optionsD)
-	.then(response => response.json())
-	.then(response => response.data.forEach(element => {
+
+
+async function getStats(){
+  try {
+    return await fetch('https://free-nba.p.rapidapi.com/stats?page=0&per_page=25', optionsD)
+    .then(response => response.json())
+  } catch (error) {
+    console.error(error)
+  }
+}
+function printStats(){
+  getStats()
+  .then(response => response.data.forEach(element => {
     divStats.innerHTML+=`
-    <div>
-    <p>first name: ${element.player['first_name']}</P>
-    <p>last name: ${element.player['last_name']}</P>
-    <p>Team name: ${element.team['full_name']}</P>
-    <p>AST:${element['ast']}</P>
-    <p>BLK:${element['blk']}</P>
+    <tr class="player" id="player_stats_${id_dynamic++}">
+    <td class="feild_api">${element.team['full_name']}    </td>
+    <td class="feild_api">${element.player['first_name']}</td>
+    <td class="feild_api">${element.player['last_name']}</td>
+    <td class="feild_api">${['ast']}</td>
+    <td class="feild_api">${element['blk']}</td>
+    <td class="feild_api">${element['fga']}</td>
+    <td class="feild_api">${element['fgm']}</td>
+    <td class="feild_api">${element['pts']}</td>
+    <td class="feild_api">${element['reb']}</td>
+    <td class="feild_api">${element['stl']}</td>
+    <td class="feild_api">${element['min']}</td>
+    </tr>
     `
   }))
-	.catch(err => console.error(err));
+}
+printStats()
 
 
 
 
+
+async function getLiveStats(){
+  try {
+    return await fetch('https://basketball-data.p.rapidapi.com/match/list?date=29%2F01%2F2021', optionsA)
+    .then(response => response.json())
+  } 
+  catch (error) {
+     console.error(err);
+  }
+}
+let rapid_Stats=document.getElementById("rapidStats")
+const optionsA = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '565bce9913msh2597330abe48d39p1a3501jsnb7eca1f35e2d',
+    'X-RapidAPI-Host': 'basketball-data.p.rapidapi.com'
+  }
+};
+let myBtn= document.getElementById("fetchLive")
+function printLiveStats(){
+getLiveStats()
+.then(response => response.forEach(element=>{
+  rapid_Stats.innerHTML+=`<div class="card text-center">
+  <div class="card-body">
+ <h5> ${element['date']}</h5>
+  <h2>${element.awayTeam['mediumName']}</h2>
+  <h2>${element.homeTeam['shortName']}</h2>
+  </div>
+  </div>`
+}))
+myBtn.disabled = true
+}
+
+
+
+
+// function replaceImg(){
+// let over_seapic=document.getElementById("overseapic")
+// setTimeout(()=>{
+//   over_seapic.innerHTML+=`
+// <h1>Register now and get 20% DISCOUNT!</h1>
+// `
+// },3000)
+// }
+// replaceImg()
+
+
+// 0:
+// awayTeam:
+// id: 125
+// mediumName: "Trailblazers"
+// name: "Portland Trail Blazers"
+// score:
+// current: 101
+// halfTime: 50
+// quarter1: 32
+// quarter2: 18
+// quarter3: 27
+// quarter4: 24
+// regular: 101
+// [[Prototype]]: Object
+// shortName: "PTB"
+// [[Prototype]]: Object
+// date: "29/01/2021 00:30:00"
+// homeTeam:
+// id: 110
+// mediumName: "Rockets"
+// name: "Houston Rockets"
+// score: {quarter1: 17, quarter2: 36, halfTime: 53, quarter3: 33, quarter4: 18, …}
+// shortName: "HOU "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// pts: 7
+// reb: 2
+// stl: 0
 
 //   ast: 0
 // blk: 1
