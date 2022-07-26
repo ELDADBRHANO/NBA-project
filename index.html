@@ -13,7 +13,9 @@
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="./index.html">
+          <img id="logo" src="/imges/LOGO/NBA.png" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,8 +35,23 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> 
+      
+      <div id="div_log_">
+        <h5>Login:</h5>
+        <input id="myinput" type="text">
+        <p id="demo"></p>
+        <button class="btn btn-dark" onclick="pushMe()">click</button>
+      </div>     
+      <div id="hold-login-user"></div>
+      <div id="hold-login-icon"></div>
     </nav>
+    <div class="card bg-dark text-white">
+      <div class="card-body">
+        <h5 class="card-title display-1">All about the NBA</h5>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
 <div class="d-flex justify-content-center" id="newsPapers">
   <div id="espnDiv" class="d-flex flex-wrap justify-content-center col-12"></div>
 </div>

@@ -81,7 +81,7 @@ function printNews() {
   <h2>${element["title"]}</h2>
   <a target="_blank" href="${
     element["url"]
-  }" class="btn btn-primary">Click here fore more Details</a>
+  }" class="btn btn-dark">Click here fore more Details</a>
 </div>
     </div>
     `;
@@ -98,8 +98,15 @@ printNews();
 
 
 
-
-
+function pushMe(){
+let myinput= document.getElementById("myinput").value;
+  // Set Item
+  localStorage.setItem("lastname", myinput);
+  // Retrieve
+  document.getElementById("hold-login-user").innerHTML = localStorage.getItem("lastname");
+  document.getElementById("hold-login-icon").innerHTML = `<img style="width:3vw;" src="/imges/LOGO/user.png" alt="">`;
+  document.getElementById("div_log_").style="display:none;"
+}
 
 
 
