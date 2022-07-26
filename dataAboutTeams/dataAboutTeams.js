@@ -1,6 +1,5 @@
 let div_games = document.getElementById("myDiv_C");
 let counter = 0;
-let counterB=0;
 const arrayLogos = [
   "/imges/teamsLogo/hawks.png",
   "/imges/teamsLogo/celtics.png",
@@ -37,7 +36,7 @@ const arrayLogos = [
 
 
 
-
+let id_dynamic_ =0;
 const optionsA = {
   method: "GET",
   headers: {
@@ -50,8 +49,8 @@ fetch("https://free-nba.p.rapidapi.com/teams", optionsA)
   .then((response) => {
     response.data.forEach((obj) => {
       div_games.innerHTML += `
-      <div class="card" style="width: 15rem;" >
-      <img  style="width:10vw;" src="${
+      <div id="team_${id_dynamic_++}" class="card" style="width:25rem">
+      <img style="width:5vw;" src="${
         arrayLogos[counter++]
       }"class="card-img-top img-fluid">
       <div class="card-body">
@@ -60,6 +59,7 @@ fetch("https://free-nba.p.rapidapi.com/teams", optionsA)
       <p>Division: ${obj["division"]}</p>
       <p>Conference: ${obj["conference"]}</p>
       </div>
+      <div></div>
       </div>`;
     });
   })

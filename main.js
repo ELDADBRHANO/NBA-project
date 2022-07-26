@@ -68,7 +68,6 @@ async function getNews() {
     console.error(err);
   }
 }
-
 function printNews() {
   getNews().then((response) =>
     response.forEach((element) => {
