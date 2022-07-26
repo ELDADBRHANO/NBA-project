@@ -22,7 +22,7 @@ function printStats(){
   getStats()
   .then(response => response.data.forEach(element => {
     divStats.innerHTML+=`
-    <tr class="player" id="player_stats_${id_dynamic++}">
+    <tr class="player text-center" id="player_stats_${id_dynamic++}">
     <td class="feild_api">${element.team['full_name']}    </td>
     <td class="feild_api">${element.player['first_name']}</td>
     <td class="feild_api">${element.player['last_name']}</td>
