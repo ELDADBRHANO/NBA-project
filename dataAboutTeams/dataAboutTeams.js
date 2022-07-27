@@ -56,16 +56,22 @@ async function getTeams(){
 }
 
 
+let myInput = document.getElementById("searchBar");
+myInput.addEventListener('input', e => {
+const valu= e.target.value
+console.log(valu);
+})
+
+
 function printTeams(){
   getTeams()
   .then((response) => {
-    response.data.forEach((obj) => {
+   response.data.forEach((obj) => {
       div_games.innerHTML += `
-      <div id="team_${id_dynamic_++}" class="card" style="width:25rem">
+      <div id="team_${id_dynamic_++}" class="card " style="width:25rem">
       <img style="width:5vw;" src="${
         arrayLogos[counter++]
       }"class="card-img-top img-fluid">
-      <div class="card-body">
       <div class="card-body">
       <h2 class="card-subtitle mb-2 text-muted">Team: ${obj["full_name"]}</h2>
       <p>Division: ${obj["division"]}</p>
@@ -78,29 +84,6 @@ function printTeams(){
 }
 printTeams()
 
-
-
-
-
-
-
-
-const arrayTeamsNames = [
-  'boston celtics',
-  'brooklyn nets'
-]
-
-
-  function myFunction() {
-    let myInput = document.getElementById("myInput").value;
-      for(let i = 0; i < myInput; i++){
-        if(myInput[i].toLowerCase() == arrayTeamsNames[i]){
-          document.getElementById("resultInput").innerHTML = obj["full_name"];
-
-        }
-      }
-    
-  }
 
 
 

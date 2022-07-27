@@ -98,22 +98,45 @@ printNews();
 
 
 
-function pushMe(){
-let myinput= document.getElementById("myinput").value;
-  localStorage.setItem("lastname", myinput);
+let mybtn = document.getElementById("mybtn");
 
+mybtn.addEventListener('click',()=>{
+    document.getElementById("div_log_").style="display:none;"
+    document.getElementById("espnDiv").innerHTML=""
+    document.getElementById("espnDiv").innerHTML+=`
+    <div id="hideLogIn" class="card">
+    <div class="card-body" style="width:25rem; height:50vh">
+    <div class="d-flex flex-column">
+    <label for="uname"><b>Username</b></label>
+    <input id="input_log"  type="text" placeholder="Enter User name" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+      
+    <input class="btn btn-dark text-white" value="Log" onclick="pushMe()"></input>
+    <label>
+      <input type="checkbox" checked="checked"> Remember me
+    </label>
+    </div>
+    </div>
+  </div>
+    `
+  })
+
+
+
+
+
+function pushMe(){
+  let myinput = document.getElementById("input_log").value;
+  localStorage.setItem("lastname", myinput);
   document.getElementById("hold-login-user").innerHTML = localStorage.getItem("lastname");
   document.getElementById("hold-login-icon").innerHTML = `<img style="width:3vw;" src="/imges/LOGO/user.png" alt="">`;
-  document.getElementById("div_log_").style="display:none;"
+  setTimeout(() => {
+    document.getElementById("hideLogIn").style="display:none;"
+    printNews()
+  }, 200);
 }
-
-
-
-
-
-
-
-
 
 
 
