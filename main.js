@@ -100,9 +100,8 @@ printNews();
 
 function pushMe(){
 let myinput= document.getElementById("myinput").value;
-  // Set Item
   localStorage.setItem("lastname", myinput);
-  // Retrieve
+
   document.getElementById("hold-login-user").innerHTML = localStorage.getItem("lastname");
   document.getElementById("hold-login-icon").innerHTML = `<img style="width:3vw;" src="/imges/LOGO/user.png" alt="">`;
   document.getElementById("div_log_").style="display:none;"
