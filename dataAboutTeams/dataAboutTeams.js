@@ -1,36 +1,36 @@
 let div_games = document.getElementById("myDiv_C");
 let counter = 0;
 const arrayLogos = [
-  "./imges/teamsLogo/hawks.png",
-  "./imges/teamsLogo/celtics.png",
-  "./imges/teamsLogo/nets.png",
-  "./imges/teamsLogo/horents.png",
-  "./imges/teamsLogo/bulls.png",
-  "./imges/teamsLogo/clevlend.png",
-  "./imges/teamsLogo/mavricks.png",
-  "./imges/teamsLogo/nuggets.png",
-  "./imges/teamsLogo/pistons.png",
-  "./imges/teamsLogo/golden.png",
-  "./imges/teamsLogo/rockets.png",
-  "./imges/teamsLogo/pacers.png",
-  "./imges/teamsLogo/clippers.png" ,
-  "./imges/teamsLogo/lakers.png",
-  "./imges/teamsLogo/grizllies.png",
-  "./imges/teamsLogo/heat.png",
-  "./imges/teamsLogo/bucks.png",
-  "./imges/teamsLogo/minesotta.png",
-  "./imges/teamsLogo/new-orleans.png",
-  "./imges/teamsLogo/knicks.png",
-  "./imges/teamsLogo/thunder.png",
-  "./imges/teamsLogo/magic.png",
-  "./imges/teamsLogo/sixers.png",
-  "./imges/teamsLogo/suns.png" ,
-  "./imges/teamsLogo/portland.png",
-  "./imges/teamsLogo/kings.png",
-  "./imges/teamsLogo/spurs.png",
-  "./imges/teamsLogo/toronto.png",
-  "./imges/teamsLogo/jazz.png" ,
-  "./imges/teamsLogo/wizards.png"
+  "../imges/teamsLogo/hawks.png",
+  "../imges/teamsLogo/celtics.png",
+  "../imges/teamsLogo/nets.png",
+  "../imges/teamsLogo/horents.png",
+  "../imges/teamsLogo/bulls.png",
+  "../imges/teamsLogo/clevlend.png",
+  "../imges/teamsLogo/mavricks.png",
+  "../imges/teamsLogo/nuggets.png",
+  "../imges/teamsLogo/pistons.png",
+  "../imges/teamsLogo/golden.png",
+  "../imges/teamsLogo/rockets.png",
+  "../imges/teamsLogo/pacers.png",
+  "../imges/teamsLogo/clippers.png" ,
+  "../imges/teamsLogo/lakers.png",
+  "../imges/teamsLogo/grizllies.png",
+  "../imges/teamsLogo/heat.png",
+  "../imges/teamsLogo/bucks.png",
+  "../imges/teamsLogo/minesotta.png",
+  "../imges/teamsLogo/new-orleans.png",
+  "../imges/teamsLogo/knicks.png",
+  "../imges/teamsLogo/thunder.png",
+  "../imges/teamsLogo/magic.png",
+  "../imges/teamsLogo/sixers.png",
+  "../imges/teamsLogo/suns.png" ,
+  "../imges/teamsLogo/portland.png",
+  "../imges/teamsLogo/kings.png",
+  "../imges/teamsLogo/spurs.png",
+  "../imges/teamsLogo/toronto.png",
+  "../imges/teamsLogo/jazz.png" ,
+  "../imges/teamsLogo/wizards.png"
 
 ];
 
@@ -101,3 +101,7 @@ const arrayTeamsNames = [
       }
     
   }
+
+
+
+
