@@ -44,8 +44,20 @@ const optionsA = {
     "X-RapidAPI-Host": "free-nba.p.rapidapi.com",
   },
 };
-fetch("https://free-nba.p.rapidapi.com/teams", optionsA)
-.then((response) => response.json())
+
+async function getTeams(){
+  try {
+    return await fetch("https://free-nba.p.rapidapi.com/teams", optionsA)
+    .then((response) => response.json())
+    
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+
+function printTeams(){
+  getTeams()
   .then((response) => {
     response.data.forEach((obj) => {
       div_games.innerHTML += `
@@ -63,5 +75,26 @@ fetch("https://free-nba.p.rapidapi.com/teams", optionsA)
       </div>`;
     });
   })
-  .catch((err) => console.log(err));
-  
+}
+printTeams()
+
+
+
+
+
+
+
+
+
+
+
+  function myFunction() {
+    let myInput = document.getElementById("myInput").value;
+      for(let i = 0; i < myInput; i++){
+        if(myInput[i].toLowerCase() == obj["full_name"].toLowerCase()){
+          document.getElementById("resultInput").innerHTML = obj["full_name"];
+
+        }
+      }
+    
+  }

@@ -34,8 +34,15 @@
         </div>
       </div>
     </nav>
-    <div class="display-1"> The best Teams in the world</div>
+    <div class="display-1 text-center"> The best Teams in the world</div>
     <img src="../imges/for-news/allnba.jpg" class="img-fluid" alt="Wild Landscape" />
+    <div class=" justify-content-center m-5" id="containerSearchInput">
+      <h3 class="display-6 bg-dark text-center text-white">Search for your favorite team!</h3>
+      <div class="d-flex justify-content-center" id="holderBtnSearch">
+        <input placeholder="search..." type="search" id="myInput" oninput="myFunction()">
+      </div>
+      <div id="resultInput"></div>
+    </div>
       <div class="d-flex justify-content-center" id="holder-teams">
         <div id="myDiv_C" class="d-flex flex-wrap justify-content-center"></div>
       </div>
@@ -54,7 +61,7 @@
       </footer>
   </div>
 </body>
-<script src="/dataAboutTeams/dataAboutTeams.js"></script>
+<script src="./dataAboutTeams.js"></script>
 </html>
 
 
