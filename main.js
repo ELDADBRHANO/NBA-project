@@ -114,6 +114,8 @@ mybtn.addEventListener('click',()=>{
     <input type="password" placeholder="Enter Password" name="psw" required>
       
     <input class="btn btn-dark text-white" value="Log" onclick="pushMe()"></input>
+    <br>
+    <input onclick="openRegisterPage()" type="button" class="btn btn-dark text-white" value="Register" > 
     <label>
       <input type="checkbox" checked="checked"> Remember me
     </label>
@@ -122,7 +124,6 @@ mybtn.addEventListener('click',()=>{
   </div>
     `
   })
-
 
 
 
@@ -140,7 +141,9 @@ function pushMe(){
 
 
 
+function openRegisterPage(){
 
+}
 
 
 
