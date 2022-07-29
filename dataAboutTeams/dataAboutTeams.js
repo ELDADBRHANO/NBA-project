@@ -86,5 +86,94 @@ printTeams()
 
 
 
+function printStands() {
+  getTeams()
+  .then((response)=>{
+    document.getElementById("me").innerHTML=`<div class="d-flex justify-content-center mt-5"><h1>NBA 2021-22 Regular Season Standings</h1></div> ` 
+    response.data.forEach((teamStand, i) =>{
+      document.getElementById("me").innerHTML+= `
+      <div class="card d-flex justify-content-center flex-wrap">
+      <div class="card-body">
+      <table>
+      <tbody>
+      <tr>
+      <td>${++i}. ${teamStand["full_name"]}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      <div>
+      `
+    })
+  })
+}
+printStands()
+// statsApi
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '565bce9913msh2597330abe48d39p1a3501jsnb7eca1f35e2d',
+// 		'X-RapidAPI-Host': 'basketball-data.p.rapidapi.com'
+// 	}
+// };
 
+// fetch('https://basketball-data.p.rapidapi.com/match/playbyplay?matchId=350275', options)
+// 	.then(response => response.json())
+// 	.then(response => {for (const key in response) {
+//     document.getElementById("me").innerHTML= `
+//     <div>
+//     <table>
+//     <thead>
+//     <tr>
+//     <td>Name: </td>
+//     <td>Date: </td>
+//     <td></td>
+//     <td></td>
+//     </tr>
+//     </thead>
+    
+//     <tbody>
+//    <ol> 
+//   ${response.awayTeam['mediumName']}
+//    <li>${response['date']}</li>
+//    <li></li>
+//    <li></li>
+//    <li></li>
+//    </ol>
+//    </tbody>
+//    </table>
+//    </div>
+//     `
+//   }
+
+//   })
+// 	.catch(err => console.error(err));
+
+//   awayTeam:
+// id: 110
+// mediumName: "Rockets"
+// name: "Houston Rockets"
+// shortName: "HOU "
+// [[Prototype]]: Object
+// date: "11/04/2021 02:00:00"
+// homeTeam:
+// id: 109
+// mediumName: "Warriors"
+// name: "Golden State Warriors"
+// shortName: "GSW"
+// [[Prototype]]: Object
+// id: 350275
+// playByPlay:
+// quarter1: Array(9)
+// 0:
+// id: 8919805
+// isStatus: true
+// minute: 12
+// orderNo: 1
+// period: 1
+// second: "00"
+// -------->
 
