@@ -13,3 +13,9 @@
   height: 8vh;
 }
 
+@media screen and (max-width: 550px) {
+.git-linkdin-img{
+  width: 15vw;
+  height: 8vh;
+}
+}

@@ -83,11 +83,3 @@ function popPodcast() {
   <div>`;
 }
 
-//   Active Cases_text: ""
-// Country_text: "USA"
-// Last Update: "2022-07-30 08:21"
-// New Cases_text: ""
-// New Deaths_text: ""
-// Total Cases_text: "93,054,184"
-// Total Deaths_text: "1,055,020"
-// Total Recovered_text: "88,011,783"
