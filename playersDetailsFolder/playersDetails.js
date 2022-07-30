@@ -77,4 +77,29 @@ function printPlayersDet(){
   )
 }
 printPlayersDet()
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '565bce9913msh2597330abe48d39p1a3501jsnb7eca1f35e2d',
+		'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
+	}
+};
 
+fetch('https://covid-193.p.rapidapi.com/statistics', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+
+
+
+
+
+//   Active Cases_text: ""
+// Country_text: "USA"
+// Last Update: "2022-07-30 08:21"
+// New Cases_text: ""
+// New Deaths_text: ""
+// Total Cases_text: "93,054,184"
+// Total Deaths_text: "1,055,020"
+// Total Recovered_text: "88,011,783"

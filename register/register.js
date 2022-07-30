@@ -1,11 +1,15 @@
 function createRegisterPage() {
   document.getElementById("register").innerHTML=`
   <div class="container contact-form">
-            <div class="contact-image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUlIQ7MJd09BL6OwcHO19YfgSHqW4ZfiZNg&usqp=CAU" alt="rocket_contact"/>
+            <div class="contact-image d-flex justify-content-center">
+                <img id="jordan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUlIQ7MJd09BL6OwcHO19YfgSHqW4ZfiZNg&usqp=CAU" alt="rocket_contact"/>
             </div>
-            <form method="post">
+            <div>
                 <h3 class="d-flex justify-content-center">Drop Us a Message</h3>
+                <br> 
+                <span class="d-flex justify-content-center">
+                <small>*If you want to subscribe let us know!</small>
+                </span>
                <div class="row d-flex justify-content-center">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -27,16 +31,12 @@ function createRegisterPage() {
                         </div>
                         <br>
                         <div class="form-group d-flex justify-content-center">
-                            <input onclick="sendEmail()" class="btn btn-dark text-white" type="submit" name="btnSubmit"  class="btnContact" value="Send Message" />
+                        <a href="mailto:name@email.com">  <input class="btn btn-dark text-white" type="submit" name="btnSubmit"  class="btnContact" value="Send Message" /></a>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
   `
 }
 createRegisterPage()
 
-
-function sendEmail() {
-  return `<a href="mailto:ebrhano@gmail.com"></a>`
-}
