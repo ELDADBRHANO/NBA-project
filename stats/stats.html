@@ -1,86 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stats.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <title>Document</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img id="logo" src="../imges/LOGO/NBA.png" alt="">
-      </a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
-            <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/dataAboutTeams/dataTeams.html">Teams</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/playersDetailsFolder/players_details.html">Players</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/stats/stats.html">Stats</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/register/register.html">Contact</a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stats.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="../imges/LOGO/NBA.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="../dataAboutTeams/dataTeams.html"
+                >Teams</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="../playersDetailsFolder/players_details.html"
+                >Players</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../stats/stats.html"
+                >Stats</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../register/register.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="display-1 text-bg-dark text-center">Daily Stats:</h1>
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="table-responsive" id="myD">
+        <table id="userTable">
+          <thead>
+            <tr>
+              <td class="field_stats text-center bg-dark text-white">TEAM</td>
+              <td class="field_stats text-center bg-dark text-white">
+                LAST NAME
+              </td>
+              <td class="field_stats text-center bg-dark text-white">
+                FIRST NAME
+              </td>
+              <td class="field_stats text-center bg-dark text-white">AST</td>
+              <td class="field_stats text-center bg-dark text-white">BLK</td>
+              <td class="field_stats text-center bg-dark text-white">FGA</td>
+              <td class="field_stats text-center bg-dark text-white">FGM</td>
+              <td class="field_stats text-center bg-dark text-white">PTS</td>
+              <td class="field_stats text-center bg-dark text-white">REB</td>
+              <td class="field_stats text-center bg-dark text-white">STL</td>
+              <td class="field_stats text-center bg-dark text-white">MIN</td>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
       </div>
     </div>
-  </nav>
-  <h1 class="display-1 text-bg-dark text-center"> Daily Stats:</h1>
-  <div class="container-fluid d-flex justify-content-center">
-    <div class="table-responsive" id="myD">
-      <table  id="userTable">
-        <thead>
-          <tr>
-            <td class="field_stats text-center bg-dark text-white">TEAM</td>
-            <td class="field_stats text-center bg-dark text-white ">LAST NAME</td>
-            <td class="field_stats text-center bg-dark text-white">FIRST NAME</td>
-            <td class="field_stats text-center bg-dark text-white">AST</td>
-            <td class="field_stats text-center bg-dark text-white">BLK</td>
-            <td class="field_stats text-center bg-dark text-white">FGA</td>
-            <td class="field_stats text-center bg-dark text-white">FGM</td>
-            <td class="field_stats text-center bg-dark text-white">PTS</td>
-            <td class="field_stats text-center bg-dark text-white">REB</td>
-            <td class="field_stats text-center bg-dark text-white">STL</td>
-            <td class="field_stats text-center bg-dark text-white">MIN</td>
-          </tr>
-        </thead>
-        <tbody id="tbody">
-        </tbody>
-       </table>
+    <div id="rapidStats">
+      <h1
+        id="overSeaHeader"
+        class="text-center disply-1 bg-dark bg-opacity-10 m-5"
+      >
+        Want to update with NBA over-seas?
+      </h1>
+      <!-- <img id="overSeaPic" class="img-fluid" src="../imges/LOGO/china.jpg" alt=""> -->
+      <div class="d-flex justify-content-center" id="btnDiv">
+        <button
+          id="fetchLive"
+          class="btn btn-dark mt-3"
+          onclick="printLiveStats()"
+        >
+          Click Here!
+        </button>
+      </div>
     </div>
-  </div>
-  <div id="rapidStats">
-    <h1 id="overSeaHeader" class="text-center disply-1 bg-dark bg-opacity-10 m-5">Want to update with NBA over-seas?</h1>
-    <!-- <img id="overSeaPic" class="img-fluid" src="../imges/LOGO/china.jpg" alt=""> -->
-    <div class="d-flex justify-content-center" id="btnDiv">
-      <button id="fetchLive" class="btn btn-dark mt-3" onclick="printLiveStats()">Click Here!</button>
-    </div>
-  </div>
-  <footer class="text-center text-lg-start bg-light text-muted">
-    © 2022 Copyright:
-    <div class="text-center p-4 d-flex justify-content-around" style="background-color: rgba(0, 0, 0, 0.05);">
-      <a href="https://www.linkedin.com/in/eldad-brhano-59b531235/">
-        <img class="git-linkdin-img " src="../imges/footer-imges/linkedin (2).png" id="linkdin_img" alt="">
-      </a>
-      <a href="https://github.com/ELDADBRHANO">
-        <img class="git-linkdin-img" src="../imges/footer-imges/github (1).png" id="git_img" alt="">
-      </a>
-    </div>
-  </footer>
-</body>
-<script src="stats.js"></script>
+    <footer class="text-center text-lg-start bg-light text-muted">
+      © 2022 Copyright:
+      <div
+        class="text-center p-4 d-flex justify-content-around"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        <a href="https://www.linkedin.com/in/eldad-brhano-59b531235/">
+          <img
+            class="git-linkdin-img"
+            src="../imges/footer-imges/linkedin (2).png"
+            id="linkdin_img"
+            alt=""
+          />
+        </a>
+        <a href="https://github.com/ELDADBRHANO">
+          <img
+            class="git-linkdin-img"
+            src="../imges/footer-imges/github (1).png"
+            id="git_img"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="stats.js"></script>
 </html>

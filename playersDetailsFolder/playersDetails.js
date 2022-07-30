@@ -18,14 +18,13 @@ const array_of_players = [
   "../imges/playersImages/kosta.png",
   "../imges/playersImages/morton.png",
   "../imges/playersImages/randolph.png",
-  "../imges/playersImages/smith.png" ,
+  "../imges/playersImages/smith.png",
   "../imges/playersImages/milos.png",
-  "../imges/playersImages/trent.png" ,
-  "../imges/playersImages/zahu.png", 
+  "../imges/playersImages/trent.png",
+  "../imges/playersImages/zahu.png",
   "../imges/playersImages/boban.png",
   "../imges/playersImages/booker.png",
-  "../imges/playersImages/some.png"
-
+  "../imges/playersImages/some.png",
 ];
 const players_Div = document.getElementById("playersDiv");
 const optionsB = {
@@ -36,30 +35,25 @@ const optionsB = {
   },
 };
 
-
-
-
-async function getApiPlayers(){
+async function getApiPlayers() {
   try {
-    players_Div.innerHTML=`
+    players_Div.innerHTML = `
     <h1 class="display-1">Loading...</h1>
     <img src="../imges/playersImages/wallpaperr.png" alt="">
-    `
-    return await fetch("https://free-nba.p.rapidapi.com/players?page=0&per_page=25", optionsB)
-    .then((response) => response.json())
-  }
-   catch (err) {
-    console.error(err)
-  }
-  finally{
-    players_Div.innerHTML=` `
+    `;
+    return await fetch(
+      "https://free-nba.p.rapidapi.com/players?page=0&per_page=25",
+      optionsB
+    ).then((response) => response.json());
+  } catch (err) {
+    console.error(err);
+  } finally {
+    players_Div.innerHTML = ` `;
   }
 }
 
-
-function printPlayersDet(){
-  getApiPlayers()
-  .then((response) =>
+function printPlayersDet() {
+  getApiPlayers().then((response) =>
     response.data.forEach((element) => {
       players_Div.innerHTML += `<div class="card" style="width: 15rem;">
     <div class="card-body">
@@ -74,26 +68,20 @@ function printPlayersDet(){
     </div>
     `;
     })
-  )
+  );
 }
-printPlayersDet()
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '565bce9913msh2597330abe48d39p1a3501jsnb7eca1f35e2d',
-		'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
-	}
-};
+printPlayersDet();
 
-fetch('https://covid-193.p.rapidapi.com/statistics', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
-
-
-
-
+function popPodcast() {
+  document.getElementById("podcast").innerHTML = `<div>
+  <form action="https://www.listennotes.com/search/" style="display: flex;flex-direction: row;padding: 25px;">
+  <!-- Limit search results for NBA BASKETBALL LIVE COMMENTARY's show -->
+  <input type="hidden" name="ocid" value="5f79a5c5a4c045a6a7feff4fcc6720bb" />
+  <input type="text" name="q" required placeholder="Search past episodes" style="flex: 1;padding: 5px 10px 5px 10px;border: 1px solid #DEDEDE;border-radius: 0;" />
+  <input type="submit" value="Search" style="background-color: #B82F00;color: #ffffff;border: 1px solid #B82F00;cursor: pointer;border-radius: 0;padding: 8px;" />
+</form>
+  <div>`;
+}
 
 //   Active Cases_text: ""
 // Country_text: "USA"
