@@ -86,33 +86,6 @@ printTeams()
 
 
 
-function printStands() {
-  getTeams()
-  .then((response)=>{
-    document.getElementById("me").innerHTML=`<div class="d-flex justify-content-center mt-5"><h1>NBA 2021-22 Regular Season Standings</h1></div> ` 
-    response.data.forEach((teamStand, i) =>{
-      document.getElementById("me").innerHTML+= `
-      <div class="card d-flex justify-content-center flex-wrap">
-      <div class="card-body">
-      <table>
-      <tbody>
-      <tr>
-      <td>${++i}. ${teamStand["full_name"]}</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      </tr>
-      </tbody>
-      </table>
-      </div>
-      <div>
-      `
-    })
-  })
-}
-printStands()
-
-
 
 // statsApi
 // const options = {

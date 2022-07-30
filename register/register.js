@@ -24,8 +24,8 @@ function createRegisterPage() {
                             <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
                         </div>
                         <br>
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="form-group justify-content-center d-flex w-100 ">
                                 <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 43vw; height: 150px;"></textarea>
                             </div>
                         </div>
