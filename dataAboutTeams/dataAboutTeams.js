@@ -111,6 +111,9 @@ function printStands() {
   })
 }
 printStands()
+
+
+
 // statsApi
 // const options = {
 // 	method: 'GET',
