@@ -30,7 +30,7 @@ function createRegisterPage() {
                             </div>
                         </div>
                         <br>
-                        <div class="form-group d-flex justify-content-center">
+                        <div class="form-group d-flex justify-content-center mb-5">
                         <a href="mailto:name@email.com">  <input class="btn btn-dark text-white" type="submit" name="btnSubmit"  class="btnContact" value="Send Message" /></a>
                         </div>
                     </div>

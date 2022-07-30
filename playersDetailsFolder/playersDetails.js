@@ -72,14 +72,14 @@ function printPlayersDet() {
 }
 printPlayersDet();
 
-function popPodcast() {
-  document.getElementById("podcast").innerHTML = `<div>
-  <form action="https://www.listennotes.com/search/" style="display: flex;flex-direction: row;padding: 25px;">
-  <!-- Limit search results for NBA BASKETBALL LIVE COMMENTARY's show -->
-  <input type="hidden" name="ocid" value="5f79a5c5a4c045a6a7feff4fcc6720bb" />
-  <input type="text" name="q" required placeholder="Search past episodes" style="flex: 1;padding: 5px 10px 5px 10px;border: 1px solid #DEDEDE;border-radius: 0;" />
-  <input type="submit" value="Search" style="background-color: #B82F00;color: #ffffff;border: 1px solid #B82F00;cursor: pointer;border-radius: 0;padding: 8px;" />
-</form>
-  <div>`;
-}
+// function popPodcast() {
+//   document.getElementById("podcast").innerHTML = `<div>
+//   <form action="https://www.listennotes.com/search/" style="display: flex;flex-direction: row;padding: 25px;">
+//   <!-- Limit search results for NBA BASKETBALL LIVE COMMENTARY's show -->
+//   <input type="hidden" name="ocid" value="5f79a5c5a4c045a6a7feff4fcc6720bb" />
+//   <input type="text" name="q" required placeholder="Search past episodes" style="flex: 1;padding: 5px 10px 5px 10px;border: 1px solid #DEDEDE;border-radius: 0;" />
+//   <input type="submit" value="Search" style="background-color: #B82F00;color: #ffffff;border: 1px solid #B82F00;cursor: pointer;border-radius: 0;padding: 8px;" />
+// </form>
+//   <div>`;
+// }
 
