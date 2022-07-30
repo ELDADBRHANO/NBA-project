@@ -74,6 +74,7 @@ getLiveStats()
   </div>`
 }))
 myBtn.disabled = true
+myBtn.style="display:none";
 }
 
 
