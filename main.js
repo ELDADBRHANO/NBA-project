@@ -44,8 +44,7 @@ const arrayImges = [
   "/imges/for-news/kingdunk.jpg",
   "/imges/for-news/kobewins.jpg",
 ];
-let espn_Div = document.getElementById("espnDiv");
-let counter = 0;
+
 let arrayImg = [
   "./imges/goldenState.png",
   "./imges/th.png",
@@ -54,7 +53,8 @@ let arrayImg = [
   "./imges/washington.png",
 ];
 let counterA = 0;
-
+let espn_Div = document.getElementById("espnDiv");
+let counter = 0;
 const options = {
   headers: {
     "X-RapidAPI-Key": "565bce9913msh2597330abe48d39p1a3501jsnb7eca1f35e2d",
@@ -146,4 +146,5 @@ function pushMe() {
 function openRegisterPage() {
   location.href = "./register/register.html";
 }
+
 
