@@ -144,6 +144,6 @@ function pushMe() {
 }
 
 function openRegisterPage() {
-  location.href = "../register/register.html";
+  location.href = "./register/register.html";
 }
 
