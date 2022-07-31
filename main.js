@@ -148,3 +148,34 @@ function openRegisterPage() {
 }
 
 
+const API_KEY = "123cedf472ea7d740a81046892916adb";
+let some ; 
+let sun_img= `<img style="width:2vw;" src="./imges/LOGO/sun.png" alt="">`
+async function getWeather(){
+    try{
+        return await fetch(
+          `https://api.openweathermap.org/data/2.5/weather?lat=${31.948563796197174}&lon=${34.891117025383345}&appid=${API_KEY}`
+        )
+          .then((res) => res.json())
+          .then((item) => {
+            for (const res in item) {
+              some = Math.floor(item[res]["feels_like"] / 10);
+              // console.log(`${some}°C`);
+              switch (some) {
+                case some:
+                  document.getElementById("weather").innerHTML += `${some}°C ${sun_img}`;
+                  break;
+                default:
+                  break;
+              }
+            }
+          });
+    }
+    catch(err){
+        console.log(err);
+    }
+    finally{
+
+    }
+}
+getWeather();
