@@ -72,7 +72,6 @@ function registerUser() {
   getUser();
 }
 
-
-if (registerUser()) {
-  
+function championshipInfo(){
+  location.href="https://thetournament.com/regions/dayton/"
 }

@@ -1,225 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./tournament.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <title>Document</title>
-</head>
-<body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../imges/LOGO/NBA.png" alt="" srcset="">
-        </a>
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../dataAboutTeams/dataTeams.html">Teams</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../playersDetailsFolder/players_details.html">Players</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../stats/stats.html">Stats</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../register/register.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../tournament/tournament.html">tournament</a>
-            </li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tournament.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" src="../imges/LOGO/NBA.png" alt="" srcset="" />
+          </a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="../dataAboutTeams/dataTeams.html"
+                  >Teams</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="../playersDetailsFolder/players_details.html"
+                  >Players</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../stats/stats.html"
+                  >Stats</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../register/register.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="../tournament/tournament.html"
+                  >tournament</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div id="gif">
+        <h2 class="display-1 text-white d-flex justify-content-center">
+          The best streetball. <br />
+          With the best players.
+        </h2>
       </div>
-    </nav>
-    <div id="gif">
-      <h2 class="display-1 text-white d-flex justify-content-center">The best streetball. <br> With the best players.</h2>
-    </div>
-    <div  class="container-fluid table-responsive">
-      <div class="row justify-content-between flex-wrap " id="explainOntournement">
-        <div class="col-md-6">
-          <img class="img-fluid" src="../imges/tourn/dunk.jpg" alt="">
-        </div>
-        <div class="col-md-6 ">
-          <div>
-            <h1 class="display-1">
-              Your teams.
-              <br>
+      <div class="container-fluid table-responsive">
+        <div
+          class="row justify-content-between flex-wrap"
+          id="explainOntournement"
+        >
+          <div class="col-md-6">
+            <img class="img-fluid" src="../imges/tourn/dunk.jpg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <div>
+              <h1 class="display-1">
+                Your teams.
+                <br />
                 Your tournament.
-            </h1>
-            <blockquote>
-              <span>
-                TBT's Million Dollar, Winner-Take-All Championship game is set! August 2nd, 8pm EDT on ESPN
-                  This is it! It’s Buffalo alumni Blue Collar U vs. Americana for Autism for $1 million. Just two teams left from our original field of 64. Which team is deeper, which team is tougher, which team wants it more? Find out: this Tuesday at 8pm EDT on ESPN.
+              </h1>
+              <blockquote>
+                <span>
+                  TBT's Million Dollar, Winner-Take-All Championship game is
+                  set! August 2nd, 8pm EDT on 5SPORT This is it! It’s Buffalo
+                  alumni Blue Collar U vs. Americana for Autism for $1 million.
+                  Just two teams left from our original field of 64. Which team
+                  is deeper, which team is tougher, which team wants it more?
+                  Find out: this Tuesday at 8pm EDT on ESPN.
+<br><br>
+                  <button class="btn btn-dark text-white" onclick="championshipInfo()">Championship Game Info</button >
+                </span>
+              </blockquote>
+            </div>
+            <div id="myCarusel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#myCarusel"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarusel"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarusel"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarusel"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarusel"
+                  data-bs-slide-to="4"
+                ></button>
+              </div>
 
-                 <li>Championship Game Info</li> 
-              </span>
-            </blockquote>
-          </div><div id="myCarusel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner mb-2 h-75">
+                <div class="carousel-item active">
+                  <img
+                    src="../imges/tourn/one.jpg"
+                    alt="grops"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imges/tourn/two.jpg"
+                    alt="teams"
+                    class="d-block h-50"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imges/tourn/three.jpg"
+                    alt="New York"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img src="../imges/tourn/four.jpg" alt="New York" />
+                </div>
+              </div>
+              <small>Photos by: Camera man</small>
+
+              <!-- Left and right controls/icons -->
               <button
+                class="carousel-control-prev"
                 type="button"
                 data-bs-target="#myCarusel"
-                data-bs-slide-to="0"
-                class="active"
-              ></button>
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
               <button
+                class="carousel-control-next"
                 type="button"
                 data-bs-target="#myCarusel"
-                data-bs-slide-to="1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#myCarusel"
-                data-bs-slide-to="2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#myCarusel"
-                data-bs-slide-to="3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#myCarusel"
-                data-bs-slide-to="4"
-              ></button>
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
-    
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner mb-2 h-75">
-              <div class="carousel-item active">
-                <img
-                  src="../imges/tourn/one.jpg"
-                  alt="grops"
-                  style="width: 100%"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../imges/tourn/two.jpg"
-                  alt="teams"
-                  class="d-block h-50"
-                  style="width: 100%"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../imges/tourn/three.jpg"
-                  alt="New York"
-                  style="width: 100%"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../imges/tourn/four.jpg"
-                  alt="New York"
-                />
-              </div>
-            </div>
-            <small>Photos by: Camera man</small>
-    
-            <!-- Left and right controls/icons -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#myCarusel"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#myCarusel"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
           </div>
         </div>
-      </div>
-      <div id="table-container" class="d-flex justify-content-center">
-        <table class="mt-5" id="userTable">
-         <thead>
-           <tr>
-             <td class="td-border">Age</td>
-             <td class="td-border">First name</td>
-             <td class="td-border">Last name</td>
-             <td class="td-border">Phone number</td>
-           </tr>
-         </thead>
-         <tbody id="tbody">
-
-         </tbody>
-        </table>
-      </div>
-      <br>
-      <div class="d-flex justify-content-center mb-5">
-        <div id="compete" class="card  d-flex justify-content-center" id="registration">
-          <div class="card-body d-flex justify-content-center">
-            <div class="d-flex flex-column"  id="form">
-              <h4 id="register-sign">Want to compete against the best?</h4>
-              <input class="inputs" id="nameRegister" required placeholder="Enter your name..." type="text" />
-              <br>
-              <input class="inputs"
-                id="input_lastName"
-                placeholder="Enter your last name..."
-                type="text"
-              />
-              <br>
-              <input class="inputs" id="input_phone" required placeholder="Enter your phone number..." type="text" />
-              <br>
-              <input required class="inputs"
-                id="input_birth"
-                placeholder="Enter your Age "
-                type="number"
-              />
-              <br>
-              <button class="btn btn-dark text-white" id="btn-register" onclick="registerUser()">Register</button>
+        <div id="table-container" class="d-flex justify-content-center">
+          <table class="mt-5" id="userTable">
+            <thead>
+              <tr>
+                <td class="td-border">Age</td>
+                <td class="td-border">First name</td>
+                <td class="td-border">Last name</td>
+                <td class="td-border">Phone number</td>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <br />
+        <div class="d-flex justify-content-center mb-5">
+          <div
+            id="compete"
+            class="card d-flex justify-content-center"
+            id="registration"
+          >
+            <div class="card-body d-flex justify-content-center">
+              <div class="d-flex flex-column" id="form">
+                <h4 id="register-sign">Want to compete against the best?</h4>
+                <input
+                  class="inputs"
+                  id="nameRegister"
+                  required
+                  placeholder="Enter your name..."
+                  type="text"
+                />
+                <br />
+                <input
+                  class="inputs"
+                  id="input_lastName"
+                  placeholder="Enter your last name..."
+                  type="text"
+                />
+                <br />
+                <input
+                  class="inputs"
+                  id="input_phone"
+                  required
+                  placeholder="Enter your phone number..."
+                  type="text"
+                />
+                <br />
+                <input
+                  required
+                  class="inputs"
+                  id="input_birth"
+                  placeholder="Enter your Age "
+                  type="number"
+                />
+                <br />
+                <button
+                  class="btn btn-dark text-white"
+                  id="btn-register"
+                  onclick="registerUser()"
+                >
+                  Register
+                </button>
+              </div>
             </div>
           </div>
-       </div>
-      </div>
+        </div>
       </div>
       <div id="errors"></div>
       <footer class="bg-dark">
         <div class="container p-4">
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-4">
-              <h5 class="mb-3 text-white" style="letter-spacing: 2px;">All in ONE site</h5>
+              <h5 class="mb-3 text-white" style="letter-spacing: 2px">
+                All in ONE site
+              </h5>
               <p class="text-white">
-                The official site of the NBA FANS for the latest NBA Scores, Stats & News. NBA/FANS/Eldad.com
+                The official site of the NBA FANS for the latest NBA Scores,
+                Stats & News. NBA/FANS/Eldad.com
               </p>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="mb-3 text-white" style="letter-spacing: 2px;">links</h5>
+              <h5 class="mb-3 text-white" style="letter-spacing: 2px">links</h5>
               <ul class="list-unstyled mb-0">
                 <li class="mb-1">
                   <a href="https://www.linkedin.com/in/eldad-brhano-59b531235/">
-                    <img class="git-linkdin-img " src="../imges/footer-imges/linkedin (2).png" id="linkdin_img" alt="">
+                    <img
+                      class="git-linkdin-img"
+                      src="../imges/footer-imges/linkedin (2).png"
+                      id="linkdin_img"
+                      alt=""
+                    />
                   </a>
                 </li>
                 <li class="mb-1">
                   <a href="https://github.com/ELDADBRHANO">
-                    <img class="git-linkdin-img" src="../imges/footer-imges/github (1).png" id="git_img" alt="">
+                    <img
+                      class="git-linkdin-img"
+                      src="../imges/footer-imges/github (1).png"
+                      id="git_img"
+                      alt=""
+                    />
                   </a>
                 </li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="mb-1 text-white" style="letter-spacing: 2px;">opening hours</h5>
-              <table class="table" style="color: #4f4f4f; border-color: #666;">
+              <h5 class="mb-1 text-white" style="letter-spacing: 2px">
+                opening hours
+              </h5>
+              <table class="table" style="color: #4f4f4f; border-color: #666">
                 <tbody>
                   <tr>
                     <td class="text-white">Mon - Fri:</td>
@@ -234,8 +318,8 @@
             </div>
           </div>
         </div>
-        </footer>
-  </div>
-  <script src="./tournament.js"></script>
-</body>
+      </footer>
+    </div>
+    <script src="./tournament.js"></script>
+  </body>
 </html>
