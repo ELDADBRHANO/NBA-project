@@ -1,9 +1,14 @@
+#eldadd{
+  width: 50vw;
+}
 #logo{
   /* height: 5vh; */
   width: 4vw;
 }
 @media screen and (max-width: 600px) {
-
+  #eldadd{
+    width: 100vw;
+  }
   #logo{
     height: 5vh;
     width: 10vw;
