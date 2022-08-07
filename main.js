@@ -159,11 +159,11 @@ async function getWeather(){
           .then((res) => res.json())
           .then((item) => {
             for (const res in item) {
-              some = Math.floor(item[res]["feels_like"] / 10);
-              // console.log(`${some}°C`);
-              switch (some) {
-                case some:
-                  document.getElementById("weather").innerHTML += `${some}°C ${sun_img}`;
+              temp = Math.floor(item[res]["feels_like"] / 10);
+              // console.log(`${temp}°C`);
+              switch (temp) {
+                case temp:
+                  document.getElementById("weather").innerHTML += `${temp}°C ${sun_img}`;
                   break;
                 default:
                   break;
