@@ -14,3 +14,7 @@
 ### You can also found a table with all of the states from the games that have been played day before!
 
 #### I would :yellow_heart: to get feedbacks about the project and hope you enjoy using it!
+<img width="450" alt="team" src="https://user-images.githubusercontent.com/102303089/189891475-a7bd247e-c82e-40cf-9f8e-df5939e4ba7e.png">
+<img width="550" alt="statee" src="https://user-images.githubusercontent.com/102303089/189891484-a83a47b4-643a-4407-ad8a-d01fd1f4e86a.png">
+<img width="450" alt="leb" src="https://user-images.githubusercontent.com/102303089/189891417-ef3435ec-e568-4729-9c7b-8a01d1918798.png">
+<img width="450" alt="newPicc" src="https://user-images.githubusercontent.com/102303089/189891454-3a9bdf2c-f0b2-4bf5-8fab-5ffe36059ea0.png">
