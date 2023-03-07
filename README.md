@@ -1,17 +1,29 @@
-# NBA Project
+# NBA Stats and News
 ### Basketball === :yellow_heart:
 
-#### Since i was a young kid Baketball has huge part in my life.
-#### I played for 8 years for my home town team, and Im a big fan of the LA Lakers.
-##### My luctruer has asked from me to build a website, the assinment was :
+## Introduction
+NBA Stats and News is a web application that provides users with up-to-date information about NBA games, players and news. Users can easily access game schedules, player stats, and the latest news from the NBA. The app was built using JavaScript, React, and espn API.
 
-- Use at least 4 Api's.
-- LayOut of Header,Main,Footer.
-##### And the rest was on my hands.
-##### After a long thought I chose to build an NBA site and you already know why!!! :laughing:
+## Features
+- View NBA game schedules, results and scores
+- Get the latest NBA news and updates
+- Search for NBA players and view their stats and game history
+- See the current NBA standings
+- View NBA team stats and rankings
 
-### In the site you can find basketball news on the NBA, all the news are daily updated.
-### You can also found a table with all of the states from the games that have been played day before!
+## How to use
+- Clone the repository
+- Install the necessary dependencies by running npm install
+- Start the app by running npm start
+- Browse to http://localhost:3000 to view the app
+
+## Technologies
+- React
+- JavaScript
+- espn API
+- HTML
+- CSS
+
 
 #### I would :yellow_heart: to get feedbacks about the project and hope you enjoy using it!
 <img width="450" alt="team" src="https://user-images.githubusercontent.com/102303089/189891475-a7bd247e-c82e-40cf-9f8e-df5939e4ba7e.png">
