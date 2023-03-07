@@ -24,7 +24,7 @@ NBA Stats and News is a web application that provides users with up-to-date info
 - HTML
 - CSS
 
-
+## Live :  https://eldadbrhano.github.io/NBA-project/
 #### I would :yellow_heart: to get feedbacks about the project and hope you enjoy using it!
 <img width="450" alt="team" src="https://user-images.githubusercontent.com/102303089/189891475-a7bd247e-c82e-40cf-9f8e-df5939e4ba7e.png">
 <img width="550" alt="statee" src="https://user-images.githubusercontent.com/102303089/189891484-a83a47b4-643a-4407-ad8a-d01fd1f4e86a.png">
